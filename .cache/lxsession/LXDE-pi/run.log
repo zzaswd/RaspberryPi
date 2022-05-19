@@ -1,257 +1,145 @@
-** Message: 05:17:11.491: environement.vala:58: Exporting primary_variable
-** Message: 05:17:11.491: environement.vala:59: desktop_environnement XDG_CURRENT_DESKTOP
-** Message: 05:17:11.491: environement.vala:150: confir_dirs is null, export : /etc/xdg
-** Message: 05:17:11.491: environement.vala:184: Exporting XDG_CONFIG_DIRS
-** Message: 05:17:11.491: environement.vala:218: custom_data :
-** Message: 05:17:11.491: environement.vala:219: data_dirs :/usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
-** Message: 05:17:11.491: environement.vala:220: data_dirs not null, export : /usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
-** Message: 05:17:11.491: environement.vala:225: Exporting XDG_DATA_DIRS
-** Message: 05:17:11.491: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
-** Message: 05:17:11.492: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
-** Message: 05:17:11.492: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/desktop.conf
-** Message: 05:17:11.492: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
-** Message: 05:17:11.492: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** Message: 13:31:10.641: environement.vala:58: Exporting primary_variable
+** Message: 13:31:10.641: environement.vala:59: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: 13:31:10.641: environement.vala:150: confir_dirs is null, export : /etc/xdg
+** Message: 13:31:10.642: environement.vala:184: Exporting XDG_CONFIG_DIRS
+** Message: 13:31:10.642: environement.vala:218: custom_data :
+** Message: 13:31:10.642: environement.vala:219: data_dirs :/usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: 13:31:10.642: environement.vala:220: data_dirs not null, export : /usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: 13:31:10.642: environement.vala:225: Exporting XDG_DATA_DIRS
+** Message: 13:31:10.642: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: 13:31:10.643: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** Message: 13:31:10.643: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** Message: 13:31:10.643: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: 13:31:10.643: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
 
-** (lxsession:633): WARNING **: 05:17:11.494: utils.vala:70: No such file or directory
-** Message: 05:17:11.494: settings.vala:540: Key file does not have key “iGtk/ColorScheme” in group “GTK”
-** Message: 05:17:11.494: settings.vala:540: Key file does not have key “windows_manager/command” in group “Session”
-** Message: 05:17:11.494: settings.vala:540: Key file does not have key “panel/command” in group “Session”
-** Message: 05:17:11.494: settings.vala:540: Key file does not have key “dock/command” in group “Session”
-** Message: 05:17:11.494: settings.vala:540: Key file does not have key “file_manager/command” in group “Session”
-** Message: 05:17:11.494: settings.vala:540: Key file does not have key “desktop_manager/command” in group “Session”
-** Message: 05:17:11.494: settings.vala:540: Key file does not have key “launcher_manager/autostart” in group “Session”
-** Message: 05:17:11.494: settings.vala:540: Key file does not have key “composite_manager/command” in group “Session”
-** Message: 05:17:11.494: settings.vala:540: Key file does not have key “im1/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “im2/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “widget1/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “notification/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “keybindings/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “im_manager/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “screensaver/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “power_manager/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “audio_manager/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “workspace_manager/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “screenshot_manager/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “message_manager/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “upgrade_manager/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “updates_manager/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “updates_manager/timeout” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “crash_manager/command” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “crash_manager/dev_mode” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “crash_manager/timeout” in group “Session”
-** Message: 05:17:11.495: settings.vala:540: Key file does not have key “upstart_user_session” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “proxy_manager/http” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “a11y/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “xrandr/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “network_gui/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “webbrowser/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “email/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “pdf_reader/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “video_player/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “audio_player/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “image_display/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “text_editor/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “archive/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “charmap/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “calculator/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “spreadsheet/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “bittorent/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “document/command” in group “Session”
-** Message: 05:17:11.496: settings.vala:540: Key file does not have key “webcam/command” in group “Session”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have key “burn/command” in group “Session”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have key “notes/command” in group “Session”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have key “disk_utility/command” in group “Session”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have key “tasks/command” in group “Session”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have group “Keymap”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have key “laptop_mode” in group “State”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have key “gnome” in group “Dbus”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have key “type” in group “Environment”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have key “ubuntu_menuproxy” in group “Environment”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have key “toolkit_integration” in group “Environment”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have key “gtk/overlay_scrollbar_disable” in group “Environment”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have key “qt/force_theme” in group “Environment”
-** Message: 05:17:11.497: settings.vala:540: Key file does not have key “qt/platform” in group “Environment”
-** Message: 05:17:11.498: settings.vala:462: Monitoring: /etc/xdg/lxsession/LXDE-pi/desktop.conf
-** Message: 05:17:11.498: settings.vala:470: Desktop file is not in config home, monitoring creation of it
-** Message: 05:17:11.498: settings.vala:485: Monitoring home path: /home/pi/.config/lxsession/LXDE-pi/desktop.conf
-** Message: 05:17:11.498: environement.vala:79: Exporting variable
-** Message: 05:17:11.498: environement.vala:80: desktop_environnement XDG_CURRENT_DESKTOP
-** Message: 05:17:11.498: environement.vala:177: custom_config :
-** Message: 05:17:11.498: environement.vala:178: config_dirs :/etc/xdg
-** Message: 05:17:11.498: environement.vala:179: confir_dirs not null, export : /etc/xdg
-** Message: 05:17:11.498: environement.vala:184: Exporting XDG_CONFIG_DIRS
-** Message: 05:17:11.498: environement.vala:218: custom_data :
-** Message: 05:17:11.499: environement.vala:219: data_dirs :/usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
-** Message: 05:17:11.499: environement.vala:220: data_dirs not null, export : /usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
-** Message: 05:17:11.499: environement.vala:225: Exporting XDG_DATA_DIRS
-** Message: 05:17:11.499: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
-** Message: 05:17:11.499: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** (lxsession:769): WARNING **: 13:31:10.645: utils.vala:70: No such file or directory
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “iGtk/ColorScheme” in group “GTK”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “windows_manager/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “panel/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “dock/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “file_manager/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “desktop_manager/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “launcher_manager/autostart” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “composite_manager/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “im1/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “im2/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “widget1/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “notification/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “keybindings/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “im_manager/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “screensaver/command” in group “Session”
+** Message: 13:31:10.645: settings.vala:540: Key file does not have key “power_manager/command” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “audio_manager/command” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “workspace_manager/command” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “screenshot_manager/command” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “message_manager/command” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “upgrade_manager/command” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “updates_manager/command” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “updates_manager/timeout” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “crash_manager/command” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “crash_manager/dev_mode” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “crash_manager/timeout” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “upstart_user_session” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “proxy_manager/http” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “a11y/command” in group “Session”
+** Message: 13:31:10.646: settings.vala:540: Key file does not have key “xrandr/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “network_gui/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “webbrowser/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “email/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “pdf_reader/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “video_player/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “audio_player/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “image_display/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “text_editor/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “archive/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “charmap/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “calculator/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “spreadsheet/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “bittorent/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “document/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “webcam/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “burn/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “notes/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “disk_utility/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “tasks/command” in group “Session”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have group “Keymap”
+** Message: 13:31:10.647: settings.vala:540: Key file does not have key “laptop_mode” in group “State”
+** Message: 13:31:10.648: settings.vala:540: Key file does not have key “gnome” in group “Dbus”
+** Message: 13:31:10.648: settings.vala:540: Key file does not have key “type” in group “Environment”
+** Message: 13:31:10.648: settings.vala:540: Key file does not have key “ubuntu_menuproxy” in group “Environment”
+** Message: 13:31:10.648: settings.vala:540: Key file does not have key “toolkit_integration” in group “Environment”
+** Message: 13:31:10.648: settings.vala:540: Key file does not have key “gtk/overlay_scrollbar_disable” in group “Environment”
+** Message: 13:31:10.648: settings.vala:540: Key file does not have key “qt/force_theme” in group “Environment”
+** Message: 13:31:10.648: settings.vala:540: Key file does not have key “qt/platform” in group “Environment”
+** Message: 13:31:10.648: settings.vala:462: Monitoring: /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** Message: 13:31:10.648: settings.vala:470: Desktop file is not in config home, monitoring creation of it
+** Message: 13:31:10.649: settings.vala:485: Monitoring home path: /home/pi/.config/lxsession/LXDE-pi/desktop.conf
+** Message: 13:31:10.649: environement.vala:79: Exporting variable
+** Message: 13:31:10.649: environement.vala:80: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: 13:31:10.649: environement.vala:177: custom_config :
+** Message: 13:31:10.649: environement.vala:178: config_dirs :/etc/xdg
+** Message: 13:31:10.649: environement.vala:179: confir_dirs not null, export : /etc/xdg
+** Message: 13:31:10.649: environement.vala:184: Exporting XDG_CONFIG_DIRS
+** Message: 13:31:10.649: environement.vala:218: custom_data :
+** Message: 13:31:10.649: environement.vala:219: data_dirs :/usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: 13:31:10.649: environement.vala:220: data_dirs not null, export : /usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: 13:31:10.649: environement.vala:225: Exporting XDG_DATA_DIRS
+** Message: 13:31:10.649: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: 13:31:10.649: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
 
-** (lxsession:633): WARNING **: 05:17:11.499: utils.vala:70: No such file or directory
-** Message: 05:17:11.499: environement.vala:254: No entry in [Environment_variable]. Key file does not have group “Environment_variable”
+** (lxsession:769): WARNING **: 13:31:10.650: utils.vala:70: No such file or directory
+** Message: 13:31:10.650: environement.vala:254: No entry in [Environment_variable]. Key file does not have group “Environment_variable”
 
-** (lxsession:633): WARNING **: 05:17:11.504: process.vala:49: Failed to execute child process “xprop” (No such file or directory)
+** (lxsession:769): WARNING **: 13:31:10.656: process.vala:49: Failed to execute child process “xprop” (No such file or directory)
 
-** (lxsession:633): WARNING **: 05:17:11.504: process.vala:50: Error when launching xprop
-** Message: 05:17:11.504: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
-** Message: 05:17:11.504: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/conffiles.conf
-** Message: 05:17:11.504: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/conffiles.conf
-** Message: 05:17:11.505: options.vala:164: Activate xsettings_manager build-in
-** Message: 05:17:11.505: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
-** Message: 05:17:11.505: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** (lxsession:769): WARNING **: 13:31:10.656: process.vala:50: Error when launching xprop
+** Message: 13:31:10.656: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: 13:31:10.656: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/conffiles.conf
+** Message: 13:31:10.656: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/conffiles.conf
+** Message: 13:31:10.656: options.vala:164: Activate xsettings_manager build-in
+** Message: 13:31:10.656: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: 13:31:10.656: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
 
-** (lxsession:633): WARNING **: 05:17:11.505: utils.vala:70: No such file or directory
-** Message: 05:17:11.529: app.vala:728: polkit separate
-** Message: 05:17:11.529: app.vala:728: polkit separate
-** Message: 05:17:11.538: app.vala:76: Launching lxpolkit 
-** Message: 05:17:11.538: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
-** Message: 05:17:11.538: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/autostart
-** Message: 05:17:11.538: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/autostart
-** Message: 05:17:11.538: autostart.vala:42: Autostart path : /etc/xdg/lxsession/LXDE-pi/autostart
-** Message: 05:17:11.549: app.vala:76: Launching lxpanel 
-** Message: 05:17:11.562: app.vala:76: Launching pcmanfm 
+** (lxsession:769): WARNING **: 13:31:10.657: utils.vala:70: No such file or directory
+** Message: 13:31:10.684: app.vala:728: polkit separate
+** Message: 13:31:10.684: app.vala:728: polkit separate
+** Message: 13:31:10.696: app.vala:76: Launching lxpolkit 
+** Message: 13:31:10.696: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: 13:31:10.696: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/autostart
+** Message: 13:31:10.696: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/autostart
+** Message: 13:31:10.696: autostart.vala:42: Autostart path : /etc/xdg/lxsession/LXDE-pi/autostart
+** Message: 13:31:10.708: app.vala:76: Launching lxpanel 
+** Message: 13:31:10.725: app.vala:76: Launching pcmanfm 
 
-** (lxsession:633): WARNING **: 05:17:11.568: app.vala:86: Failed to execute child process “xscreensaver” (No such file or directory)
+** (lxsession:769): WARNING **: 13:31:10.734: app.vala:86: Failed to execute child process “xscreensaver” (No such file or directory)
 
-** (lxsession:633): WARNING **: 05:17:11.568: app.vala:87: Error when launching xscreensaver
-** Message: 05:17:11.580: options.vala:107: Create build-in Clipboard
-** Message: 05:17:11.590: main.vala:450: Check keymap_mode (null)
-** Message: 05:17:11.597: app.vala:76: Launching /usr/bin/ssh-agent 
-SSH_AUTH_SOCK=/tmp/ssh-7yOumiUXDajo/agent.757; export SSH_AUTH_SOCK;
-SSH_AGENT_PID=767; export SSH_AGENT_PID;
-echo Agent pid 767;
+** (lxsession:769): WARNING **: 13:31:10.734: app.vala:87: Error when launching xscreensaver
+** Message: 13:31:10.748: options.vala:107: Create build-in Clipboard
+** Message: 13:31:10.751: main.vala:450: Check keymap_mode (null)
+** Message: 13:31:10.759: app.vala:76: Launching /usr/bin/ssh-agent 
+SSH_AUTH_SOCK=/tmp/ssh-UirI8JVK9e67/agent.932; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=939; export SSH_AGENT_PID;
+echo Agent pid 939;
 Obt-Message: Xinerama extension is not present on the server
-** Message: 05:17:11.917: app.vala:130: /usr/bin/ssh-agent exit with this type of exit: 0
+** Message: 13:31:11.031: app.vala:130: /usr/bin/ssh-agent exit with this type of exit: 0
 Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
-** Message: 05:17:12.976: x-terminal-emulator has very limited support, consider choosing another terminal
-** Message: 05:17:13.128: x-terminal-emulator has very limited support, consider choosing another terminal
+** Message: 13:31:11.927: x-terminal-emulator has very limited support, consider choosing another terminal
+** Message: 13:31:12.074: x-terminal-emulator has very limited support, consider choosing another terminal
 grep: /home/pi/.config/lxpanel/LXDE-pi/panels/*: No such file or directory
-** Message: 05:17:14.287: Connecting ...
-** Message: 05:17:14.288: Status changed to down
+** Message: 13:31:13.135: Connecting ...
+** Message: 13:31:13.136: Status changed to down
 
-** (lxpanel:750): CRITICAL **: 05:17:14.288: dhcpcd_open: Inappropriate ioctl for device
+** (lxpanel:922): CRITICAL **: 13:31:13.136: dhcpcd_open: Inappropriate ioctl for device
 Unit pt-device-manager.service could not be found.
 Unit pi-topd.service could not be found.
 
-** (lxpanel:750): WARNING **: 05:17:14.448: Battery 0 not found
-** Message: 05:17:14.747: up: No network connection - polling...
-** Message: 05:17:15.290: Status changed to opened
-** Message: 05:17:15.290: Connected to dhcpcd-8.1.2
-** Message: 05:17:15.291: Status changed to disconnected
-** Message: 05:17:15.291: eth0: Link is down
-** Message: 05:17:15.291: wlan0: Not associated
-** Message: 05:17:15.294: wlan0: WPA status connected
-** Message: 05:17:36.958: wlan0: Associated with iptime_ksh
-** Message: 05:17:36.979: Status changed to connecting
-** Message: 05:17:43.488: wlan0: Configured 192.168.0.6/24
-** Message: 05:17:43.488: Status changed to connected
-** Message: 05:24:17.205: up: Checking for updates
-** Message: 05:24:21.155: up: Cache updated - comparing versions
-** Message: 05:24:26.441: up: Check complete - 46 updates available
-/usr/share/system-config-printer/applet.py:364: Warning: Source ID 11 was not found when attempting to remove it
-  GLib.source_remove (self.timer)
-[2689:2689:0518/075612.679796:ERROR:component_loader.cc(188)] Failed to parse extension manifest.
-[2742:2742:0518/075612.798039:ERROR:gpu_init.cc(454)] Passthrough is not supported, GL is egl, ANGLE is 
-[2689:2766:0518/075617.366721:ERROR:chrome_browser_main_extra_parts_metrics.cc(227)] START: ReportBluetoothAvailability(). If you don't see the END: message, this is crbug.com/1216328.
-[2689:2766:0518/075617.366819:ERROR:chrome_browser_main_extra_parts_metrics.cc(230)] END: ReportBluetoothAvailability()
-[2742:2742:0518/075619.284708:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.991148 s, last_timebase_=9199057916 bogo-microseconds, timebase=9200049064 bogo-microseconds, last_media_stream_counter_=9199, media_stream_counter=9200
-[2742:2742:0518/075620.240994:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.956335 s, last_timebase_=9200049064 bogo-microseconds, timebase=9201005399 bogo-microseconds, last_media_stream_counter_=9200, media_stream_counter=9201
-[2742:2742:0518/075622.271913:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00544 s, last_timebase_=9202030624 bogo-microseconds, timebase=9203036068 bogo-microseconds, last_media_stream_counter_=9202, media_stream_counter=9203
-[2742:2742:0518/075623.268666:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.996215 s, last_timebase_=9203036068 bogo-microseconds, timebase=9204032283 bogo-microseconds, last_media_stream_counter_=9203, media_stream_counter=9204
-[2742:2742:0518/075624.294152:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.0262 s, last_timebase_=9204032283 bogo-microseconds, timebase=9205058484 bogo-microseconds, last_media_stream_counter_=9204, media_stream_counter=9205
-[2742:2742:0518/075625.289421:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.99526 s, last_timebase_=9205058484 bogo-microseconds, timebase=9206053744 bogo-microseconds, last_media_stream_counter_=9205, media_stream_counter=9206
-[2742:2742:0518/075629.252374:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.973266 s, last_timebase_=9209043433 bogo-microseconds, timebase=9210016699 bogo-microseconds, last_media_stream_counter_=9209, media_stream_counter=9210
-[2742:2742:0518/075630.251023:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.998379 s, last_timebase_=9210016699 bogo-microseconds, timebase=9211015078 bogo-microseconds, last_media_stream_counter_=9210, media_stream_counter=9211
-[2742:2742:0518/075631.242767:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.991522 s, last_timebase_=9211015078 bogo-microseconds, timebase=9212006600 bogo-microseconds, last_media_stream_counter_=9211, media_stream_counter=9212
-[2742:2742:0518/075632.244787:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.0025 s, last_timebase_=9212006600 bogo-microseconds, timebase=9213009105 bogo-microseconds, last_media_stream_counter_=9212, media_stream_counter=9213
-[2742:2742:0518/075633.241985:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.997318 s, last_timebase_=9213009105 bogo-microseconds, timebase=9214006423 bogo-microseconds, last_media_stream_counter_=9213, media_stream_counter=9214
-[2742:2742:0518/075634.240237:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.998203 s, last_timebase_=9214006423 bogo-microseconds, timebase=9215004626 bogo-microseconds, last_media_stream_counter_=9214, media_stream_counter=9215
-[2742:2742:0518/075635.257952:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.01761 s, last_timebase_=9215004626 bogo-microseconds, timebase=9216022237 bogo-microseconds, last_media_stream_counter_=9215, media_stream_counter=9216
-[2742:2742:0518/075637.266312:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00422 s, last_timebase_=9216022237 bogo-microseconds, timebase=9218030687 bogo-microseconds, last_media_stream_counter_=9216, media_stream_counter=9218
-[2742:2742:0518/075640.264809:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.997175 s, last_timebase_=9220032035 bogo-microseconds, timebase=9221029210 bogo-microseconds, last_media_stream_counter_=9220, media_stream_counter=9221
-[2742:2742:0518/075641.283862:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.01864 s, last_timebase_=9221029210 bogo-microseconds, timebase=9222047849 bogo-microseconds, last_media_stream_counter_=9221, media_stream_counter=9222
-[2742:2742:0518/075642.287697:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00413 s, last_timebase_=9222047849 bogo-microseconds, timebase=9223051981 bogo-microseconds, last_media_stream_counter_=9222, media_stream_counter=9223
-[2742:2742:0518/075643.284428:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.996825 s, last_timebase_=9223051981 bogo-microseconds, timebase=9224048806 bogo-microseconds, last_media_stream_counter_=9223, media_stream_counter=9224
-[2742:2742:0518/075644.276477:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.991978 s, last_timebase_=9224048806 bogo-microseconds, timebase=9225040784 bogo-microseconds, last_media_stream_counter_=9224, media_stream_counter=9225
-[2742:2742:0518/075645.283927:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00718 s, last_timebase_=9225040784 bogo-microseconds, timebase=9226047969 bogo-microseconds, last_media_stream_counter_=9225, media_stream_counter=9226
-[2742:2742:0518/075646.286276:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00228 s, last_timebase_=9226047969 bogo-microseconds, timebase=9227050246 bogo-microseconds, last_media_stream_counter_=9226, media_stream_counter=9227
-[2742:2742:0518/075647.285844:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.999735 s, last_timebase_=9227050246 bogo-microseconds, timebase=9228049981 bogo-microseconds, last_media_stream_counter_=9227, media_stream_counter=9228
-[2742:2742:0518/075648.243917:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.95822 s, last_timebase_=9228049981 bogo-microseconds, timebase=9229008201 bogo-microseconds, last_media_stream_counter_=9228, media_stream_counter=9229
-[2742:2742:0518/075649.246931:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00221 s, last_timebase_=9229008201 bogo-microseconds, timebase=9230010406 bogo-microseconds, last_media_stream_counter_=9229, media_stream_counter=9230
-[2742:2742:0518/075650.283770:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.03763 s, last_timebase_=9230010406 bogo-microseconds, timebase=9231048038 bogo-microseconds, last_media_stream_counter_=9230, media_stream_counter=9231
-[2742:2742:0518/075651.285734:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00177 s, last_timebase_=9231048038 bogo-microseconds, timebase=9232049805 bogo-microseconds, last_media_stream_counter_=9231, media_stream_counter=9232
-[2742:2742:0518/075652.287324:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00151 s, last_timebase_=9232049805 bogo-microseconds, timebase=9233051311 bogo-microseconds, last_media_stream_counter_=9232, media_stream_counter=9233
-[2742:2742:0518/075653.279635:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.992685 s, last_timebase_=9233051311 bogo-microseconds, timebase=9234043996 bogo-microseconds, last_media_stream_counter_=9233, media_stream_counter=9234
-[2742:2742:0518/075654.283725:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00405 s, last_timebase_=9234043996 bogo-microseconds, timebase=9235048048 bogo-microseconds, last_media_stream_counter_=9234, media_stream_counter=9235
-[2742:2742:0518/075655.288300:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00455 s, last_timebase_=9235048048 bogo-microseconds, timebase=9236052597 bogo-microseconds, last_media_stream_counter_=9235, media_stream_counter=9236
-[2742:2742:0518/075656.281192:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.99294 s, last_timebase_=9236052597 bogo-microseconds, timebase=9237045537 bogo-microseconds, last_media_stream_counter_=9236, media_stream_counter=9237
-[2742:2742:0518/075657.285780:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00439 s, last_timebase_=9237045537 bogo-microseconds, timebase=9238049926 bogo-microseconds, last_media_stream_counter_=9237, media_stream_counter=9238
-[2742:2742:0518/075658.289914:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00427 s, last_timebase_=9238049926 bogo-microseconds, timebase=9239054194 bogo-microseconds, last_media_stream_counter_=9238, media_stream_counter=9239
-[2742:2742:0518/075700.240897:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.975488 s, last_timebase_=9239054194 bogo-microseconds, timebase=9241005170 bogo-microseconds, last_media_stream_counter_=9239, media_stream_counter=9241
-[2742:2742:0518/075701.286416:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00499 s, last_timebase_=9241045733 bogo-microseconds, timebase=9242050722 bogo-microseconds, last_media_stream_counter_=9241, media_stream_counter=9242
-[2742:2742:0518/075702.280952:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.993998 s, last_timebase_=9242050722 bogo-microseconds, timebase=9243044720 bogo-microseconds, last_media_stream_counter_=9242, media_stream_counter=9243
-[2742:2742:0518/075703.290651:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.01028 s, last_timebase_=9243044720 bogo-microseconds, timebase=9244055003 bogo-microseconds, last_media_stream_counter_=9243, media_stream_counter=9244
-[2742:2742:0518/075704.287269:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.996357 s, last_timebase_=9244055003 bogo-microseconds, timebase=9245051360 bogo-microseconds, last_media_stream_counter_=9244, media_stream_counter=9245
-[2742:2742:0518/075705.282615:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.995328 s, last_timebase_=9245051360 bogo-microseconds, timebase=9246046688 bogo-microseconds, last_media_stream_counter_=9245, media_stream_counter=9246
-[2742:2742:0518/075706.287856:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00537 s, last_timebase_=9246046688 bogo-microseconds, timebase=9247052053 bogo-microseconds, last_media_stream_counter_=9246, media_stream_counter=9247
-[2742:2742:0518/075708.242435:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.99758 s, last_timebase_=9248009104 bogo-microseconds, timebase=9249006684 bogo-microseconds, last_media_stream_counter_=9248, media_stream_counter=9249
-[2742:2742:0518/075709.283620:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.998147 s, last_timebase_=9249049789 bogo-microseconds, timebase=9250047936 bogo-microseconds, last_media_stream_counter_=9249, media_stream_counter=9250
-[2742:2742:0518/075710.266553:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.983039 s, last_timebase_=9250047936 bogo-microseconds, timebase=9251030975 bogo-microseconds, last_media_stream_counter_=9250, media_stream_counter=9251
-[2742:2742:0518/075711.285017:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.01835 s, last_timebase_=9251030975 bogo-microseconds, timebase=9252049327 bogo-microseconds, last_media_stream_counter_=9251, media_stream_counter=9252
-[2742:2742:0518/075712.281779:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.996822 s, last_timebase_=9252049327 bogo-microseconds, timebase=9253046149 bogo-microseconds, last_media_stream_counter_=9252, media_stream_counter=9253
-[2742:2742:0518/075713.292939:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.01118 s, last_timebase_=9253046149 bogo-microseconds, timebase=9254057329 bogo-microseconds, last_media_stream_counter_=9253, media_stream_counter=9254
-[2742:2742:0518/075714.271679:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.978511 s, last_timebase_=9254057329 bogo-microseconds, timebase=9255035840 bogo-microseconds, last_media_stream_counter_=9254, media_stream_counter=9255
-[2742:2742:0518/075717.270923:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.962403 s, last_timebase_=9257072694 bogo-microseconds, timebase=9258035097 bogo-microseconds, last_media_stream_counter_=9257, media_stream_counter=9258
-[2742:2742:0518/075718.265076:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.994387 s, last_timebase_=9258035097 bogo-microseconds, timebase=9259029484 bogo-microseconds, last_media_stream_counter_=9258, media_stream_counter=9259
-[2742:2742:0518/075719.273656:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00827 s, last_timebase_=9259029484 bogo-microseconds, timebase=9260037752 bogo-microseconds, last_media_stream_counter_=9259, media_stream_counter=9260
-[2742:2742:0518/075720.267842:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.994462 s, last_timebase_=9260037752 bogo-microseconds, timebase=9261032214 bogo-microseconds, last_media_stream_counter_=9260, media_stream_counter=9261
-[2742:2742:0518/075721.267574:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.999248 s, last_timebase_=9261032214 bogo-microseconds, timebase=9262031462 bogo-microseconds, last_media_stream_counter_=9261, media_stream_counter=9262
-[2742:2742:0518/075722.267416:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00033 s, last_timebase_=9262031462 bogo-microseconds, timebase=9263031792 bogo-microseconds, last_media_stream_counter_=9262, media_stream_counter=9263
-[2742:2742:0518/075724.274001:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00329 s, last_timebase_=9263031792 bogo-microseconds, timebase=9265038370 bogo-microseconds, last_media_stream_counter_=9263, media_stream_counter=9265
-[2742:2742:0518/075725.274766:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.994025 s, last_timebase_=9265045087 bogo-microseconds, timebase=9266039112 bogo-microseconds, last_media_stream_counter_=9265, media_stream_counter=9266
-[2742:2742:0518/075726.244968:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.969075 s, last_timebase_=9266039112 bogo-microseconds, timebase=9267008187 bogo-microseconds, last_media_stream_counter_=9266, media_stream_counter=9267
-[2742:2742:0518/075727.243118:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.999235 s, last_timebase_=9267008187 bogo-microseconds, timebase=9268007422 bogo-microseconds, last_media_stream_counter_=9267, media_stream_counter=9268
-[2742:2742:0518/075733.288016:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00618 s, last_timebase_=9273045926 bogo-microseconds, timebase=9274052105 bogo-microseconds, last_media_stream_counter_=9273, media_stream_counter=9274
-[2742:2742:0518/075734.287508:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.999375 s, last_timebase_=9274052105 bogo-microseconds, timebase=9275051480 bogo-microseconds, last_media_stream_counter_=9274, media_stream_counter=9275
-[2742:2742:0518/075735.285997:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.998454 s, last_timebase_=9275051480 bogo-microseconds, timebase=9276049934 bogo-microseconds, last_media_stream_counter_=9275, media_stream_counter=9276
-[2742:2742:0518/075736.239051:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.953535 s, last_timebase_=9276049934 bogo-microseconds, timebase=9277003469 bogo-microseconds, last_media_stream_counter_=9276, media_stream_counter=9277
-[2742:2742:0518/075738.285614:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.998824 s, last_timebase_=9278048513 bogo-microseconds, timebase=9279047337 bogo-microseconds, last_media_stream_counter_=9278, media_stream_counter=9279
-[2742:2742:0518/075739.285648:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00206 s, last_timebase_=9279047337 bogo-microseconds, timebase=9280049401 bogo-microseconds, last_media_stream_counter_=9279, media_stream_counter=9280
-[2742:2742:0518/075747.164225:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.984849 s, last_timebase_=9280049401 bogo-microseconds, timebase=9287928195 bogo-microseconds, last_media_stream_counter_=9280, media_stream_counter=9288
-[2742:2742:0518/075748.256196:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.948097 s, last_timebase_=9288072479 bogo-microseconds, timebase=9289020576 bogo-microseconds, last_media_stream_counter_=9288, media_stream_counter=9289
-[2742:2742:0518/075749.244939:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.95954 s, last_timebase_=9289048180 bogo-microseconds, timebase=9290007720 bogo-microseconds, last_media_stream_counter_=9289, media_stream_counter=9290
-[2742:2742:0518/075752.285811:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00903 s, last_timebase_=9292041147 bogo-microseconds, timebase=9293050175 bogo-microseconds, last_media_stream_counter_=9292, media_stream_counter=9293
-[2742:2742:0518/075753.282084:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.996234 s, last_timebase_=9293050175 bogo-microseconds, timebase=9294046409 bogo-microseconds, last_media_stream_counter_=9293, media_stream_counter=9294
-[2742:2742:0518/075754.288520:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.0064 s, last_timebase_=9294046409 bogo-microseconds, timebase=9295052808 bogo-microseconds, last_media_stream_counter_=9294, media_stream_counter=9295
-[2742:2742:0518/075755.289684:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.996675 s, last_timebase_=9295052808 bogo-microseconds, timebase=9296049483 bogo-microseconds, last_media_stream_counter_=9295, media_stream_counter=9296
-[2742:2742:0518/075756.238612:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.953565 s, last_timebase_=9296049483 bogo-microseconds, timebase=9297003048 bogo-microseconds, last_media_stream_counter_=9296, media_stream_counter=9297
-[2742:2742:0518/075758.288438:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.04506 s, last_timebase_=9298007657 bogo-microseconds, timebase=9299052719 bogo-microseconds, last_media_stream_counter_=9298, media_stream_counter=9299
-[2742:2742:0518/075759.290938:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00252 s, last_timebase_=9299052719 bogo-microseconds, timebase=9300055236 bogo-microseconds, last_media_stream_counter_=9299, media_stream_counter=9300
-[2742:2742:0518/075800.286933:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.996019 s, last_timebase_=9300055236 bogo-microseconds, timebase=9301051255 bogo-microseconds, last_media_stream_counter_=9300, media_stream_counter=9301
-[2742:2742:0518/075801.284032:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.997097 s, last_timebase_=9301051255 bogo-microseconds, timebase=9302048352 bogo-microseconds, last_media_stream_counter_=9301, media_stream_counter=9302
-[2742:2742:0518/075802.277838:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.993835 s, last_timebase_=9302048352 bogo-microseconds, timebase=9303042187 bogo-microseconds, last_media_stream_counter_=9302, media_stream_counter=9303
-[2742:2742:0518/075803.284253:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.0064 s, last_timebase_=9303042187 bogo-microseconds, timebase=9304048583 bogo-microseconds, last_media_stream_counter_=9303, media_stream_counter=9304
-[2742:2742:0518/075804.287387:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.0031 s, last_timebase_=9304048583 bogo-microseconds, timebase=9305051688 bogo-microseconds, last_media_stream_counter_=9304, media_stream_counter=9305
-[2742:2742:0518/075805.284426:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.997062 s, last_timebase_=9305051688 bogo-microseconds, timebase=9306048750 bogo-microseconds, last_media_stream_counter_=9305, media_stream_counter=9306
-[2742:2742:0518/075806.286742:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.0023 s, last_timebase_=9306048750 bogo-microseconds, timebase=9307051049 bogo-microseconds, last_media_stream_counter_=9306, media_stream_counter=9307
-[2742:2742:0518/075807.285928:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.999194 s, last_timebase_=9307051049 bogo-microseconds, timebase=9308050243 bogo-microseconds, last_media_stream_counter_=9307, media_stream_counter=9308
-[2742:2742:0518/075808.242595:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.956633 s, last_timebase_=9308050243 bogo-microseconds, timebase=9309006876 bogo-microseconds, last_media_stream_counter_=9308, media_stream_counter=9309
-[2753:4:0518/075809.518021:ERROR:node_controller.cc(585)] Trying to re-add dropped peer 6361C79AC8459E7F.7AC660E046151B4B
-[2753:4:0518/075810.040499:ERROR:node_controller.cc(585)] Trying to re-add dropped peer 347BB1808A1D39FB.F63874F343F480C7
-[2742:2742:0518/075811.285982:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00109 s, last_timebase_=9310047721 bogo-microseconds, timebase=9312049907 bogo-microseconds, last_media_stream_counter_=9310, media_stream_counter=9312
-[2742:2742:0518/075812.292463:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.986465 s, last_timebase_=9312070290 bogo-microseconds, timebase=9313056755 bogo-microseconds, last_media_stream_counter_=9312, media_stream_counter=9313
-[2742:2742:0518/075813.281384:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.988747 s, last_timebase_=9313056755 bogo-microseconds, timebase=9314045502 bogo-microseconds, last_media_stream_counter_=9313, media_stream_counter=9314
-[2742:2742:0518/075814.301134:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.01997 s, last_timebase_=9314045502 bogo-microseconds, timebase=9315065472 bogo-microseconds, last_media_stream_counter_=9314, media_stream_counter=9315
-[2742:2742:0518/075815.290534:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.988473 s, last_timebase_=9315065472 bogo-microseconds, timebase=9316053945 bogo-microseconds, last_media_stream_counter_=9315, media_stream_counter=9316
-[2742:2742:0518/075816.277945:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.988326 s, last_timebase_=9316053945 bogo-microseconds, timebase=9317042271 bogo-microseconds, last_media_stream_counter_=9316, media_stream_counter=9317
-[2742:2742:0518/075817.280958:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00251 s, last_timebase_=9317042271 bogo-microseconds, timebase=9318044781 bogo-microseconds, last_media_stream_counter_=9317, media_stream_counter=9318
-[2742:2742:0518/075818.280502:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00003 s, last_timebase_=9318044781 bogo-microseconds, timebase=9319044808 bogo-microseconds, last_media_stream_counter_=9318, media_stream_counter=9319
-
-(lxpanel:750): Gtk-WARNING **: 07:58:21.609: no trigger event for menu popup
-[2742:2742:0518/075827.120999:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.982282 s, last_timebase_=9319044808 bogo-microseconds, timebase=9327885352 bogo-microseconds, last_media_stream_counter_=9319, media_stream_counter=9328
-[2742:2742:0518/075828.251130:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.971347 s, last_timebase_=9328044105 bogo-microseconds, timebase=9329015452 bogo-microseconds, last_media_stream_counter_=9328, media_stream_counter=9329
-
-(lxpanel:750): Gtk-WARNING **: 07:58:29.312: no trigger event for menu popup
-[2742:2742:0518/075840.375129:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.01024 s, last_timebase_=9329015452 bogo-microseconds, timebase=9341138305 bogo-microseconds, last_media_stream_counter_=9329, media_stream_counter=9341
-[2742:2742:0518/082318.682197:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=1.00014 s, last_timebase_=9341237390 bogo-microseconds, timebase=10819446564 bogo-microseconds, last_media_stream_counter_=9341, media_stream_counter=10819
-[2742:2742:0518/082321.244394:ERROR:sync_control_vsync_provider.cc(139)] Calculated bogus refresh interval=0.99842 s, last_timebase_=10821010264 bogo-microseconds, timebase=10822008684 bogo-microseconds, last_media_stream_counter_=10821, media_stream_counter=10822
+** (lxpanel:922): WARNING **: 13:31:13.282: Battery 0 not found
+** Message: 13:31:13.626: up: No network connection - polling...
+** Message: 13:31:14.137: Status changed to opened
+** Message: 13:31:14.137: Connected to dhcpcd-8.1.2
+** Message: 13:31:14.138: Status changed to connecting
+** Message: 13:31:14.139: eth0: Link is down
+** Message: 13:31:14.139: wlan0: Associated with iptime_ksh
+** Message: 13:31:14.142: wlan0: WPA status connected
+** Message: 13:31:16.111: wlan0: Configured 192.168.0.6/24
+** Message: 13:31:16.111: Status changed to connected
