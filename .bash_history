@@ -148,3 +148,22 @@ ls
 nano db_sprintf.
 nano db_s.c
 nano db.c
+cd /var/www/html/
+ls
+cd ..
+cd
+cd ksh_workspace/
+ls
+cd 0520
+ls
+mkdir Idea_web
+cd
+cd /var/www/html/
+ls
+mv idea_* cd /home/pi/ksh_workspace/0520/Idea_web/
+mv idea_*  /home/pi/ksh_workspace/0520/Idea_web/
+mv idea*  /home/pi/ksh_workspace/0520/Idea_web/
+ls
+cd /home/pi/ksh_workspace/0520/Idea_web/
+ls
+sudo raspi-config

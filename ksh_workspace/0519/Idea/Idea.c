@@ -81,7 +81,7 @@ int main(){
 				}
 			//	if(temp<100 && humi<100){ 			  // 튀는 값 제거
 					if(flag == 1){
-						sprintf(in_sql,"insert into Idea(NOW_BUS_STOP, TO_BUS_STOP, BUS_NUMBER, time) values ('%s', '%s', %d, curtime() )",now_bus,to_bus,bus_num);
+						sprintf(in_sql,"insert into Idea(ID,NOW_BUS_STOP, TO_BUS_STOP, BUS_NUMBER,date, time) values (null,'%s', '%s', %d, curdate(),curtime() )",now_bus,to_bus,bus_num);
 						printf("%s\n",in_sql);
 						res = mysql_query(conn,in_sql);
 
