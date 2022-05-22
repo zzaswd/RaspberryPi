@@ -1,0 +1,14 @@
+../Core/Src/main.c:77:5:_write	24	static
+../Core/Src/main.c:82:6:delay_us	16	static
+../Core/Src/main.c:88:5:getKeyNumber	24	static
+../Core/Src/main.c:111:5:WriteString	24	static
+../Core/Src/main.c:152:6:RegisterData	112	static
+../Core/Src/main.c:190:6:ID_Check	544	static
+../Core/Src/main.c:241:5:main	80	static
+../Core/Src/main.c:339:6:SystemClock_Config	88	static
+../Core/Src/main.c:385:13:MX_ETH_Init	8	static
+../Core/Src/main.c:434:13:MX_TIM3_Init	32	static
+../Core/Src/main.c:479:13:MX_USART3_UART_Init	8	static
+../Core/Src/main.c:512:13:MX_USB_OTG_FS_PCD_Init	8	static
+../Core/Src/main.c:547:13:MX_GPIO_Init	56	static
+../Core/Src/main.c:627:6:Error_Handler	4	static,ignoring_inline_asm
