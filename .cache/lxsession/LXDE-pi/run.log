@@ -1,152 +1,1139 @@
-** Message: 02:50:42.643: environement.vala:58: Exporting primary_variable
-** Message: 02:50:42.643: environement.vala:59: desktop_environnement XDG_CURRENT_DESKTOP
-** Message: 02:50:42.643: environement.vala:150: confir_dirs is null, export : /etc/xdg
-** Message: 02:50:42.643: environement.vala:184: Exporting XDG_CONFIG_DIRS
-** Message: 02:50:42.643: environement.vala:218: custom_data :
-** Message: 02:50:42.643: environement.vala:219: data_dirs :/usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
-** Message: 02:50:42.643: environement.vala:220: data_dirs not null, export : /usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
-** Message: 02:50:42.644: environement.vala:225: Exporting XDG_DATA_DIRS
-** Message: 02:50:42.644: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
-** Message: 02:50:42.645: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
-** Message: 02:50:42.645: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/desktop.conf
-** Message: 02:50:42.645: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
-** Message: 02:50:42.645: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** Message: 20:56:56.599: environement.vala:58: Exporting primary_variable
+** Message: 20:56:56.599: environement.vala:59: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: 20:56:56.599: environement.vala:150: confir_dirs is null, export : /etc/xdg
+** Message: 20:56:56.599: environement.vala:184: Exporting XDG_CONFIG_DIRS
+** Message: 20:56:56.599: environement.vala:218: custom_data :
+** Message: 20:56:56.600: environement.vala:219: data_dirs :/usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: 20:56:56.600: environement.vala:220: data_dirs not null, export : /usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: 20:56:56.600: environement.vala:225: Exporting XDG_DATA_DIRS
+** Message: 20:56:56.600: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: 20:56:56.601: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** Message: 20:56:56.601: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** Message: 20:56:56.601: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: 20:56:56.601: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
 
-** (lxsession:791): WARNING **: 02:50:42.647: utils.vala:70: No such file or directory
-** Message: 02:50:42.647: settings.vala:540: Key file does not have key “iGtk/ColorScheme” in group “GTK”
-** Message: 02:50:42.647: settings.vala:540: Key file does not have key “windows_manager/command” in group “Session”
-** Message: 02:50:42.647: settings.vala:540: Key file does not have key “panel/command” in group “Session”
-** Message: 02:50:42.647: settings.vala:540: Key file does not have key “dock/command” in group “Session”
-** Message: 02:50:42.647: settings.vala:540: Key file does not have key “file_manager/command” in group “Session”
-** Message: 02:50:42.647: settings.vala:540: Key file does not have key “desktop_manager/command” in group “Session”
-** Message: 02:50:42.647: settings.vala:540: Key file does not have key “launcher_manager/autostart” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “composite_manager/command” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “im1/command” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “im2/command” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “widget1/command” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “notification/command” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “keybindings/command” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “im_manager/command” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “screensaver/command” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “power_manager/command” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “audio_manager/command” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “workspace_manager/command” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “screenshot_manager/command” in group “Session”
-** Message: 02:50:42.648: settings.vala:540: Key file does not have key “message_manager/command” in group “Session”
-** Message: 02:50:42.649: settings.vala:540: Key file does not have key “upgrade_manager/command” in group “Session”
-** Message: 02:50:42.649: settings.vala:540: Key file does not have key “updates_manager/command” in group “Session”
-** Message: 02:50:42.649: settings.vala:540: Key file does not have key “updates_manager/timeout” in group “Session”
-** Message: 02:50:42.649: settings.vala:540: Key file does not have key “crash_manager/command” in group “Session”
-** Message: 02:50:42.649: settings.vala:540: Key file does not have key “crash_manager/dev_mode” in group “Session”
-** Message: 02:50:42.649: settings.vala:540: Key file does not have key “crash_manager/timeout” in group “Session”
-** Message: 02:50:42.649: settings.vala:540: Key file does not have key “upstart_user_session” in group “Session”
-** Message: 02:50:42.649: settings.vala:540: Key file does not have key “proxy_manager/http” in group “Session”
-** Message: 02:50:42.649: settings.vala:540: Key file does not have key “a11y/command” in group “Session”
-** Message: 02:50:42.649: settings.vala:540: Key file does not have key “xrandr/command” in group “Session”
-** Message: 02:50:42.649: settings.vala:540: Key file does not have key “network_gui/command” in group “Session”
-** Message: 02:50:42.650: settings.vala:540: Key file does not have key “webbrowser/command” in group “Session”
-** Message: 02:50:42.650: settings.vala:540: Key file does not have key “email/command” in group “Session”
-** Message: 02:50:42.650: settings.vala:540: Key file does not have key “pdf_reader/command” in group “Session”
-** Message: 02:50:42.650: settings.vala:540: Key file does not have key “video_player/command” in group “Session”
-** Message: 02:50:42.650: settings.vala:540: Key file does not have key “audio_player/command” in group “Session”
-** Message: 02:50:42.650: settings.vala:540: Key file does not have key “image_display/command” in group “Session”
-** Message: 02:50:42.650: settings.vala:540: Key file does not have key “text_editor/command” in group “Session”
-** Message: 02:50:42.650: settings.vala:540: Key file does not have key “archive/command” in group “Session”
-** Message: 02:50:42.650: settings.vala:540: Key file does not have key “charmap/command” in group “Session”
-** Message: 02:50:42.650: settings.vala:540: Key file does not have key “calculator/command” in group “Session”
-** Message: 02:50:42.650: settings.vala:540: Key file does not have key “spreadsheet/command” in group “Session”
-** Message: 02:50:42.650: settings.vala:540: Key file does not have key “bittorent/command” in group “Session”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have key “document/command” in group “Session”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have key “webcam/command” in group “Session”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have key “burn/command” in group “Session”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have key “notes/command” in group “Session”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have key “disk_utility/command” in group “Session”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have key “tasks/command” in group “Session”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have group “Keymap”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have key “laptop_mode” in group “State”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have key “gnome” in group “Dbus”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have key “type” in group “Environment”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have key “ubuntu_menuproxy” in group “Environment”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have key “toolkit_integration” in group “Environment”
-** Message: 02:50:42.651: settings.vala:540: Key file does not have key “gtk/overlay_scrollbar_disable” in group “Environment”
-** Message: 02:50:42.652: settings.vala:540: Key file does not have key “qt/force_theme” in group “Environment”
-** Message: 02:50:42.652: settings.vala:540: Key file does not have key “qt/platform” in group “Environment”
-** Message: 02:50:42.652: settings.vala:462: Monitoring: /etc/xdg/lxsession/LXDE-pi/desktop.conf
-** Message: 02:50:42.652: settings.vala:470: Desktop file is not in config home, monitoring creation of it
-** Message: 02:50:42.652: settings.vala:485: Monitoring home path: /home/pi/.config/lxsession/LXDE-pi/desktop.conf
-** Message: 02:50:42.653: environement.vala:79: Exporting variable
-** Message: 02:50:42.653: environement.vala:80: desktop_environnement XDG_CURRENT_DESKTOP
-** Message: 02:50:42.653: environement.vala:177: custom_config :
-** Message: 02:50:42.653: environement.vala:178: config_dirs :/etc/xdg
-** Message: 02:50:42.653: environement.vala:179: confir_dirs not null, export : /etc/xdg
-** Message: 02:50:42.653: environement.vala:184: Exporting XDG_CONFIG_DIRS
-** Message: 02:50:42.653: environement.vala:218: custom_data :
-** Message: 02:50:42.654: environement.vala:219: data_dirs :/usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
-** Message: 02:50:42.654: environement.vala:220: data_dirs not null, export : /usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
-** Message: 02:50:42.654: environement.vala:225: Exporting XDG_DATA_DIRS
-** Message: 02:50:42.654: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
-** Message: 02:50:42.654: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** (lxsession:706): WARNING **: 20:56:56.604: utils.vala:70: 그런 파일이나 디렉터리가 없습니다
+** Message: 20:56:56.604: settings.vala:540: 키 파일에 있는 “GTK” 그룹의 “iGtk/ColorScheme” 키가 없습니다
+** Message: 20:56:56.604: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “windows_manager/command” 키가 없습니다
+** Message: 20:56:56.604: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “panel/command” 키가 없습니다
+** Message: 20:56:56.604: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “dock/command” 키가 없습니다
+** Message: 20:56:56.604: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “file_manager/command” 키가 없습니다
+** Message: 20:56:56.604: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “desktop_manager/command” 키가 없습니다
+** Message: 20:56:56.604: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “launcher_manager/autostart” 키가 없습니다
+** Message: 20:56:56.604: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “composite_manager/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “im1/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “im2/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “widget1/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “notification/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “keybindings/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “im_manager/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “screensaver/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “power_manager/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “audio_manager/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “workspace_manager/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “screenshot_manager/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “message_manager/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “upgrade_manager/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “updates_manager/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “updates_manager/timeout” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “crash_manager/command” 키가 없습니다
+** Message: 20:56:56.605: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “crash_manager/dev_mode” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “crash_manager/timeout” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “upstart_user_session” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “proxy_manager/http” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “a11y/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “xrandr/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “network_gui/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “webbrowser/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “email/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “pdf_reader/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “video_player/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “audio_player/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “images_display/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “text_editor/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “archive/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “charmap/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “calculator/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “spreadsheet/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “bittorent/command” 키가 없습니다
+** Message: 20:56:56.606: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “document/command” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “webcam/command” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “burn/command” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “notes/command” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “disk_utility/command” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “Session” 그룹의 “tasks/command” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 “Keymap” 그룹이 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “State” 그룹의 “laptop_mode” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “Dbus” 그룹의 “gnome” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “Environment” 그룹의 “type” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “Environment” 그룹의 “ubuntu_menuproxy” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “Environment” 그룹의 “toolkit_integration” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “Environment” 그룹의 “gtk/overlay_scrollbar_disable” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “Environment” 그룹의 “qt/force_theme” 키가 없습니다
+** Message: 20:56:56.607: settings.vala:540: 키 파일에 있는 “Environment” 그룹의 “qt/platform” 키가 없습니다
+** Message: 20:56:56.608: settings.vala:462: Monitoring: /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** Message: 20:56:56.608: settings.vala:470: Desktop file is not in config home, monitoring creation of it
+** Message: 20:56:56.608: settings.vala:485: Monitoring home path: /home/pi/.config/lxsession/LXDE-pi/desktop.conf
+** Message: 20:56:56.608: environement.vala:79: Exporting variable
+** Message: 20:56:56.609: environement.vala:80: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: 20:56:56.609: environement.vala:177: custom_config :
+** Message: 20:56:56.609: environement.vala:178: config_dirs :/etc/xdg
+** Message: 20:56:56.609: environement.vala:179: confir_dirs not null, export : /etc/xdg
+** Message: 20:56:56.609: environement.vala:184: Exporting XDG_CONFIG_DIRS
+** Message: 20:56:56.609: environement.vala:218: custom_data :
+** Message: 20:56:56.609: environement.vala:219: data_dirs :/usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: 20:56:56.609: environement.vala:220: data_dirs not null, export : /usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: 20:56:56.609: environement.vala:225: Exporting XDG_DATA_DIRS
+** Message: 20:56:56.609: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: 20:56:56.609: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
 
-** (lxsession:791): WARNING **: 02:50:42.654: utils.vala:70: No such file or directory
-** Message: 02:50:42.654: environement.vala:254: No entry in [Environment_variable]. Key file does not have group “Environment_variable”
+** (lxsession:706): WARNING **: 20:56:56.609: utils.vala:70: 그런 파일이나 디렉터리가 없습니다
+** Message: 20:56:56.609: environement.vala:254: No entry in [Environment_variable]. 키 파일에 “Environment_variable” 그룹이 없습니다
+** Message: 20:56:56.617: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: 20:56:56.617: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/conffiles.conf
+** Message: 20:56:56.617: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/conffiles.conf
+** Message: 20:56:56.617: options.vala:164: Activate xsettings_manager build-in
+** Message: 20:56:56.617: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: 20:56:56.617: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
 
-** (lxsession:791): WARNING **: 02:50:42.663: process.vala:49: Failed to execute child process “xprop” (No such file or directory)
+** (lxsession:706): WARNING **: 20:56:56.617: utils.vala:70: 그런 파일이나 디렉터리가 없습니다
+xprop:  no such property "_NET_NUMBER_OF_DESKTOPS"
+xprop:  no such property "_NET_DESKTOP_NAMES"
+** Message: 20:56:56.722: app.vala:721: polkit separate
+** Message: 20:56:56.722: app.vala:721: polkit separate
+** Message: 20:56:56.730: app.vala:76: Launching lxpolkit 
+** Message: 20:56:56.730: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: 20:56:56.730: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/autostart
+** Message: 20:56:56.730: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/autostart
+** Message: 20:56:56.730: autostart.vala:42: Autostart path : /etc/xdg/lxsession/LXDE-pi/autostart
+** Message: 20:56:56.741: app.vala:76: Launching lxpanel 
+** Message: 20:56:56.754: app.vala:76: Launching pcmanfm 
 
-** (lxsession:791): WARNING **: 02:50:42.663: process.vala:50: Error when launching xprop
-** Message: 02:50:42.664: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
-** Message: 02:50:42.664: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/conffiles.conf
-** Message: 02:50:42.664: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/conffiles.conf
-** Message: 02:50:42.665: options.vala:164: Activate xsettings_manager build-in
-** Message: 02:50:42.665: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
-** Message: 02:50:42.665: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** (lxsession:706): WARNING **: 20:56:56.765: app.vala:86: 하위 프로세스 “xscreensaver”을(를) 실행하기 실패 (그런 파일이나 디렉터리가 없습니다)
 
-** (lxsession:791): WARNING **: 02:50:42.665: utils.vala:70: No such file or directory
-** Message: 02:50:42.692: app.vala:728: polkit separate
-** Message: 02:50:42.692: app.vala:728: polkit separate
-** Message: 02:50:42.700: app.vala:76: Launching lxpolkit 
-** Message: 02:50:42.700: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
-** Message: 02:50:42.701: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/autostart
-** Message: 02:50:42.701: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/autostart
-** Message: 02:50:42.701: autostart.vala:42: Autostart path : /etc/xdg/lxsession/LXDE-pi/autostart
-** Message: 02:50:42.714: app.vala:76: Launching lxpanel 
-** Message: 02:50:42.732: app.vala:76: Launching pcmanfm 
-
-** (lxsession:791): WARNING **: 02:50:42.743: app.vala:86: Failed to execute child process “xscreensaver” (No such file or directory)
-
-** (lxsession:791): WARNING **: 02:50:42.743: app.vala:87: Error when launching xscreensaver
-** Message: 02:50:42.757: options.vala:107: Create build-in Clipboard
-** Message: 02:50:42.759: main.vala:450: Check keymap_mode (null)
-** Message: 02:50:42.765: app.vala:76: Launching /usr/bin/ssh-agent 
-SSH_AUTH_SOCK=/tmp/ssh-8JtM6jHOA6PS/agent.969; export SSH_AUTH_SOCK;
-SSH_AGENT_PID=973; export SSH_AGENT_PID;
-echo Agent pid 973;
-Obt-Message: Xinerama extension is not present on the server
-** Message: 02:50:43.052: app.vala:130: /usr/bin/ssh-agent exit with this type of exit: 0
+** (lxsession:706): WARNING **: 20:56:56.765: app.vala:87: Error when launching xscreensaver
+** Message: 20:56:56.775: options.vala:107: Create build-in Clipboard
+** Message: 20:56:56.777: main.vala:441: Check keymap_mode (null)
+** Message: 20:56:56.784: app.vala:76: Launching /usr/bin/ssh-agent 
+SSH_AUTH_SOCK=/tmp/ssh-kIfPzfCzaInx/agent.791; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=795; export SSH_AGENT_PID;
+echo Agent pid 795;
+** Message: 20:56:56.922: x-terminal-emulator has very limited support, consider choose another terminal
+** Message: 20:56:56.929: app.vala:130: /usr/bin/ssh-agent exit with this type of exit: 0
+** Message: 20:56:56.958: x-terminal-emulator has very limited support, consider choose another terminal
+grep: /home/pi/.config/lxpanel/LXDE-pi/panels/*: 그런 파일이나 디렉터리가 없습니다
 Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
-** Message: 02:50:43.896: x-terminal-emulator has very limited support, consider choosing another terminal
-** Message: 02:50:44.039: x-terminal-emulator has very limited support, consider choosing another terminal
-grep: /home/pi/.config/lxpanel/LXDE-pi/panels/*: No such file or directory
-** Message: 02:50:45.020: Connecting ...
-** Message: 02:50:45.021: Status changed to down
-
-** (lxpanel:960): CRITICAL **: 02:50:45.021: dhcpcd_open: Inappropriate ioctl for device
+** Message: 20:56:58.411: Connecting ...
+** Message: 20:56:58.411: Status changed to down
 Unit pt-device-manager.service could not be found.
-Unit pi-topd.service could not be found.
 
-** (lxpanel:960): WARNING **: 02:50:45.186: Battery 0 not found
-** Message: 02:50:45.535: up: No network connection - polling...
-** Message: 02:50:46.022: Status changed to opened
-** Message: 02:50:46.022: Connected to dhcpcd-8.1.2
-** Message: 02:50:46.022: Status changed to connecting
-** Message: 02:50:46.022: eth0: Link is down
-** Message: 02:50:46.022: wlan0: Associated with iptime_ksh
-** Message: 02:50:46.024: wlan0: WPA status connected
-** Message: 02:50:49.467: wlan0: Configured 192.168.0.6/24
-** Message: 02:50:49.467: Status changed to connected
-/usr/share/system-config-printer/applet.py:364: Warning: Source ID 12 was not found when attempting to remove it
-  GLib.source_remove (self.timer)
-/usr/share/system-config-printer/applet.py:364: Warning: Source ID 14 was not found when attempting to remove it
-  GLib.source_remove (self.timer)
-** Message: 02:52:52.343: up: Checking for updates
-** Message: 02:53:09.583: up: Error updating cache - E: http://archive.raspberrypi.org/debian bullseye InRelease is not (yet) available (Temporary failure resolving 'archive.raspberrypi.org')
+** (lxpanel:787): WARNING **: 20:56:58.744: Battery 0 not found
 
+** (pcmanfm:788): WARNING **: 20:56:58.768: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.768: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.768: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.768: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.768: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.768: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.768: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.768: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.768: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.769: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.770: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.771: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.772: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.773: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.774: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.775: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.776: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.777: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.778: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.779: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.780: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.781: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.781: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.781: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.781: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.782: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.784: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.798: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.798: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.798: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.798: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.798: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.798: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.798: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.798: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.799: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.800: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.801: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.802: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.803: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.804: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.804: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.804: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.804: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.804: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.804: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.804: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.804: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.806: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.806: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.806: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.806: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.806: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.806: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.806: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.807: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.807: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.809: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.809: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.809: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.809: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.809: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.810: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.811: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.812: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.813: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.813: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.813: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.814: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.814: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.814: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.817: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.817: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.817: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.817: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.817: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.817: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.817: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.817: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.817: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.817: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.817: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.817: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.818: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.819: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.820: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.820: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.820: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.820: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.820: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.820: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.828: got unmount for unknown desktop item
+
+** (pcmanfm:788): WARNING **: 20:56:58.861: got unmount for unknown desktop item
+** Message: 20:56:59.413: Status changed to opened
+** Message: 20:56:59.413: Connected to dhcpcd-8.1.2
+** Message: 20:56:59.414: Status changed to connecting
+** Message: 20:56:59.414: eth0: Link is down
+** Message: 20:56:59.414: wlan0: Associated with iptime_ksh
+** Message: 20:56:59.416: wlan0: WPA status connected
+** Message: 20:56:59.416: wlan0: Received scan results
+** Message: 20:57:05.822: wlan0: Configured 192.168.0.6/24
+** Message: 20:57:05.823: Status changed to connected
+** Message: 20:58:17.613: wlan0: Received scan results
+** Message: 20:59:17.724: wlan0: Received scan results
+** Message: 21:00:17.729: wlan0: Received scan results
+** Message: 21:01:17.645: wlan0: Received scan results
+** Message: 21:02:17.653: wlan0: Received scan results
+** Message: 21:03:17.656: wlan0: Received scan results
+** Message: 21:04:17.596: wlan0: Received scan results
+** Message: 21:05:17.610: wlan0: Received scan results
+** Message: 21:06:17.615: wlan0: Received scan results
+** Message: 21:07:17.619: wlan0: Received scan results
+** Message: 21:08:17.628: wlan0: Received scan results
+** Message: 21:09:17.523: wlan0: Received scan results
+** Message: 21:10:17.640: wlan0: Received scan results
+** Message: 21:11:17.655: wlan0: Received scan results
+** Message: 21:12:17.564: wlan0: Received scan results
+** Message: 21:13:17.561: wlan0: Received scan results
+** Message: 21:14:17.673: wlan0: Received scan results
+** Message: 21:15:17.650: wlan0: Received scan results
+** Message: 21:16:17.577: wlan0: Received scan results
+** Message: 21:17:17.586: wlan0: Received scan results
+** Message: 21:18:17.790: wlan0: Received scan results
+** Message: 21:19:17.605: wlan0: Received scan results
+** Message: 21:20:17.641: wlan0: Received scan results
+** Message: 21:21:17.623: wlan0: Received scan results
+** Message: 21:22:17.629: wlan0: Received scan results
+** Message: 21:23:17.633: wlan0: Received scan results
+** Message: 21:24:17.644: wlan0: Received scan results
+** Message: 21:25:17.644: wlan0: Received scan results
+** Message: 21:26:17.646: wlan0: Received scan results
+** Message: 21:27:17.660: wlan0: Received scan results
+** Message: 21:28:17.696: wlan0: Received scan results
+** Message: 21:29:17.676: wlan0: Received scan results
+** Message: 21:30:17.682: wlan0: Received scan results
+** Message: 21:31:17.693: wlan0: Received scan results
+** Message: 21:32:17.698: wlan0: Received scan results
+** Message: 21:33:17.605: wlan0: Received scan results
+** Message: 21:34:17.616: wlan0: Received scan results
+** Message: 21:35:17.698: wlan0: Received scan results
+** Message: 21:36:17.710: wlan0: Received scan results
+** Message: 21:37:17.712: wlan0: Received scan results
+** Message: 21:38:17.725: wlan0: Received scan results
+** Message: 21:39:17.626: wlan0: Received scan results
+** Message: 21:40:17.743: wlan0: Received scan results
+** Message: 21:41:17.736: wlan0: Received scan results
+** Message: 21:42:17.757: wlan0: Received scan results
+** Message: 21:43:17.759: wlan0: Received scan results
+** Message: 21:44:17.673: wlan0: Received scan results
+** Message: 21:45:17.676: wlan0: Received scan results
+** Message: 21:46:17.683: wlan0: Received scan results
+** Message: 21:47:17.700: wlan0: Received scan results
+** Message: 21:48:17.598: wlan0: Received scan results
+** Message: 21:49:17.708: wlan0: Received scan results
+** Message: 21:50:17.622: wlan0: Received scan results
+** Message: 21:51:17.621: wlan0: Received scan results
+** Message: 21:52:17.643: wlan0: Received scan results
+** Message: 21:53:17.637: wlan0: Received scan results
+** Message: 21:54:17.651: wlan0: Received scan results
+** Message: 21:55:17.658: wlan0: Received scan results
+** Message: 21:56:17.664: wlan0: Received scan results
+** Message: 21:57:17.673: wlan0: Received scan results
+** Message: 21:58:17.688: wlan0: Received scan results
+** Message: 21:59:17.690: wlan0: Received scan results
+** Message: 22:00:17.698: wlan0: Received scan results
+** Message: 22:01:17.641: wlan0: Received scan results
+** Message: 22:02:17.608: wlan0: Received scan results
+** Message: 22:03:17.619: wlan0: Received scan results
+** Message: 22:04:17.632: wlan0: Received scan results
+** Message: 22:05:17.738: wlan0: Received scan results
+** Message: 22:06:17.651: wlan0: Received scan results
+** Message: 22:07:17.656: wlan0: Received scan results
+** Message: 22:08:17.651: wlan0: Received scan results
+** Message: 22:09:17.649: wlan0: Received scan results
+** Message: 22:10:17.650: wlan0: Received scan results
+** Message: 22:11:17.655: wlan0: Received scan results
+** Message: 22:12:17.654: wlan0: Received scan results
+** Message: 22:13:17.655: wlan0: Received scan results
+** Message: 22:14:17.659: wlan0: Received scan results
+** Message: 22:15:17.656: wlan0: Received scan results
+** Message: 22:16:17.661: wlan0: Received scan results
+** Message: 22:17:17.666: wlan0: Received scan results
+** Message: 22:18:17.671: wlan0: Received scan results
+** Message: 22:19:17.676: wlan0: Received scan results
+** Message: 22:20:17.682: wlan0: Received scan results
+** Message: 22:21:17.694: wlan0: Received scan results
+** Message: 22:22:17.700: wlan0: Received scan results
+** Message: 22:23:17.799: wlan0: Received scan results

@@ -1,10 +1,10 @@
-Xsession: X session started for pi at Sat 21 May 02:50:40 BST 2022
-WARNING: tempfile is deprecated; consider using mktemp instead.
+Xsession: X session started for pi at 2022. 05. 23. (월) 20:56:55 KST
 dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 dbus-update-activation-environment: setting DISPLAY=:0
 dbus-update-activation-environment: setting XAUTHORITY=/home/pi/.Xauthority
 localuser:pi being added to access control list
 dbus-update-activation-environment: setting USER=pi
+dbus-update-activation-environment: setting LANGUAGE=ko_KR.UTF-8
 dbus-update-activation-environment: setting TEXTDOMAIN=Linux-PAM
 dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
 dbus-update-activation-environment: setting HOME=/home/pi
@@ -17,7 +17,7 @@ dbus-update-activation-environment: setting PATH=/usr/local/sbin:/usr/local/bin:
 dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
 dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
 dbus-update-activation-environment: setting DISPLAY=:0
-dbus-update-activation-environment: setting LANG=en_GB.UTF-8
+dbus-update-activation-environment: setting LANG=ko_KR.UTF-8
 dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=lightdm-xsession
 dbus-update-activation-environment: setting XAUTHORITY=/home/pi/.Xauthority
 dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/pi
@@ -25,8 +25,9 @@ dbus-update-activation-environment: setting SHELL=/bin/bash
 dbus-update-activation-environment: setting GDMSESSION=lightdm-xsession
 dbus-update-activation-environment: setting NO_AT_BRIDGE=1
 dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting LC_ALL=ko_KR.UTF-8
 dbus-update-activation-environment: setting PWD=/home/pi
-** Message: 02:50:42.465: main.vala:103: Session is LXDE-pi
-** Message: 02:50:42.465: main.vala:104: DE is LXDE
-** Message: 02:50:42.639: main.vala:135: log directory: /home/pi/.cache/lxsession/LXDE-pi
-** Message: 02:50:42.639: main.vala:136: log path: /home/pi/.cache/lxsession/LXDE-pi/run.log
+** Message: 20:56:56.397: main.vala:101: Session is LXDE-pi
+** Message: 20:56:56.397: main.vala:102: DE is LXDE
+** Message: 20:56:56.592: main.vala:133: log directory: /home/pi/.cache/lxsession/LXDE-pi
+** Message: 20:56:56.592: main.vala:134: log path: /home/pi/.cache/lxsession/LXDE-pi/run.log
