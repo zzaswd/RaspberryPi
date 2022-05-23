@@ -152,27 +152,27 @@ int WriteString(int num, char* id, char * pass,int idx,int flag){
 }
 
 // DC Motor added
-// 로그인 실패 시 미사일 발사(?)
+// 로그?�� ?��?�� ?�� 미사?�� 발사(?)
 void Missile()
 {
-	// 5초간 동작 후 정지
+	// 5초간 ?��?�� ?�� ?���??
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_SET);
-	HAL_delay(5000);
+	HAL_Delay(3000);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_RESET);
 }
 
 // LCD added
-// LCD 메인 화면
+// LCD 메인 ?���??
 void LCDMain(void) // Main LCD
 {
 	lcd_clear();
 	lcd_put_cur(0, 4);
 	lcd_send_string("WELCOME!");
-	lcd_put_Cur(1, 0);
-	lcd_send_string("Register  Log in");
+	lcd_put_cur(1, 0);
+	lcd_send_string("16:Reg  12:Login");
 }
 
-// LCD 회원 등록 화면
+// LCD ?��?�� ?���?? ?���??
 void LCD_Register(void) // ID, PW
 {
 	lcd_clear();
@@ -183,18 +183,43 @@ void LCD_Register(void) // ID, PW
 	lcd_put_cur(0, 5);
 }
 
-// LCD 로그인 화면
-void LCD_LogIn(void)
+void LCD_Register_Success(void) // ID, PW
 {
+	lcd_clear();
+	lcd_put_cur(0, 3);
+	lcd_send_string("Register");
+	lcd_put_cur(1, 3);
+	lcd_send_string("Success!!");
+	lcd_put_cur(0, 5);
+	HAL_Delay(2000);
+}
+
+void LCD_User_data(char** ID,int line){
+
 	lcd_clear();
 	lcd_put_cur(0, 0);
 	lcd_send_string("ID :");
+	lcd_send_string(ID[line]);
 	lcd_put_cur(1, 0);
-	lcd_send_string("PW :");
+	lcd_send_string("ID :");
+	lcd_send_string(ID[line+1]);
 	lcd_put_cur(0, 5);
 }
 
-// LCD 로그인 성공 시 화면
+
+// LCD 로그?�� ?���??
+void LCD_LogIn(char*ID, char* PASS)
+{
+	lcd_clear();
+	lcd_put_cur(0, 0);
+	lcd_send_string("ID : ");
+	lcd_send_string(ID);
+	lcd_put_cur(1, 0);
+	lcd_send_string("PW : ");
+	lcd_send_string(PASS);
+}
+
+// LCD 로그?�� ?���?? ?�� ?���??
 void LCD_LogInTrue(void)
 {
 	lcd_clear();
@@ -202,26 +227,37 @@ void LCD_LogInTrue(void)
 	lcd_send_string("SUCCESS!");
 	lcd_put_cur(1, 3);
 	lcd_send_string("DOOR OPEN");
+	TIM3->CCR1 = 2000;
 	HAL_Delay(2000);
-	LCDMain(); // 다시 메인 화면으로 돌아감
+	TIM3->CCR1 = 1000;
+	HAL_Delay(2000);
+
 }
 
-// LCD 로그인 실패 시 화면 및 미사일 발사
-void LCD_LogInFalse(void)
+// LCD 로그?�� ?��?�� ?�� ?���?? �?? 미사?�� 발사
+void LCD_LogInFalse_Missile(void)
 {
 	lcd_clear();
 	lcd_put_cur(0, 4);
 	lcd_send_string("FAILURE!");
 	lcd_put_cur(1, 1);
 	lcd_send_string("Missile Launch");
-
-	Missile();
-	LCDMain(); // 미사일 동작 후, 다시 메인 화면으로 돌아감
+	HAL_Delay(2000);
 }
 
+void LCD_LogInFalse(void)
+{
+	lcd_clear();
+	lcd_put_cur(0, 4);
+	lcd_send_string("FAILURE!");
+	lcd_put_cur(1, 1);
+	lcd_send_string("Please Retry..");
 
-// ?��?���????��
-void RegisterData(void){//flag -1 �????���??? flag 0 ID, flag 1 pass, flag 2 ?���???
+	HAL_Delay(2000);
+}
+
+// ?��?���??????��
+void RegisterData(void){//flag -1 �??????���????? flag 0 ID, flag 1 pass, flag 2 ?���?????
 
 			  char id[20] = "";
 			  char pass[20]= "";
@@ -232,7 +268,8 @@ void RegisterData(void){//flag -1 �????���??? flag 0 ID, flag 1 pass, fl
 
 				  int pressedKey = getKeyNumber();
 				  int result = WriteString(pressedKey, id, pass, idx, flag);
-				  if(result == -1){ // lcd ?��면에?�� �????���???
+				  LCD_LogIn(id,pass);
+				  if(result == -1){
 					  if(idx!=0){
 						  idx--;
 						  if(flag == 0) id[idx]= ' ';
@@ -241,32 +278,26 @@ void RegisterData(void){//flag -1 �????���??? flag 0 ID, flag 1 pass, fl
 				  }
 				  else if(result == 1){
 					  flag = 1; idx =0;
-				  }	// cursor ?��?��
+				  }
 				  else if(result == 2){
 
 					  // data 베이?��?�� ?��?��
 					  char temp[40];
 					  sprintf(temp,"100:%s:%sL",id,pass);
 					  HAL_UART_Transmit(&huart3, temp, strlen(temp), 20);
+					  LCD_Register_Success();
 					  break;
 				  }
-				  else if(result == 10) continue; // ?��?��?�� 값�? ?��?��처리
+				  else if(result == 10) continue;
 				  else idx++;
-				  // lcd 출력
-				  // set cursor (0,0)
-				  // lcd.print("ID :")
-				  // lcd.print(id)
 
 			  }
 
-
-			  //로그?�� ?��면으�??? �???�???
+			  HAL_Delay(300);
 
 }
 
 void ID_Check(void){
-	  // �??? ?��?��?���??? ?��?��?���??? ?��?��?��?�� 200 보내�???
-
 
 			  char temp[10];
 			  sprintf(temp,"%dL",200);
@@ -277,15 +308,16 @@ void ID_Check(void){
 			  int str_len;
 			  char* ID[100]={0};
 			  int idx = 0;
+			  delay_us(10);
 			  while(1){
 				  if(HAL_UART_Receive(&huart3, &Rx_temp, 1, 10)==HAL_OK){
 					  RxBuffer[idx++] = Rx_temp;
+					  delay_us(10);
 					  if(Rx_temp == 'L') break;
 				  }
 			  }
 			  RxBuffer[idx-1] = '\0';
 			  str_len = strlen(RxBuffer);
-
 
 			  pToken = strtok(RxBuffer,":");
 			  int i = 0;
@@ -297,14 +329,14 @@ void ID_Check(void){
 			  }
 			  int line = 0;
 			  while(1){
-
+				  LCD_User_data(ID, line);
 				  // LCD 출력
-				  // ID[line] 첫번�??? ?��?��, ID[line+1]?�� ?��번째 ?��?��
+				  // ID[line] 첫번�????? ?��?��, ID[line+1]?�� ?��번째 ?��?��
 				  if(getKeyNumber()==1){ //up
 					  if(line !=0) line--;
 				  }
 				  else if(getKeyNumber()==2){
-					  if(line<i) line ++;
+					  if(line<i-1) line ++;
 				  }
 				  else if(getKeyNumber()==4) break;
 			  }
@@ -349,11 +381,14 @@ int main(void)
   /* USER CODE BEGIN 2 */
   int pressedKey;
   HAL_TIM_Base_Start(&htim3);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+  lcd_init();
+  LCDMain();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  // 4 : ?��?�� �???,
+  // 4 : ?��?�� �?????,
   // 8 :
   // 12 :
   // 16 :  ?��?��
@@ -366,31 +401,72 @@ int main(void)
 
 	  else if(pressedKey == 12) ID_Check();
 
-	  else if(pressedKey > 0){
-		  // 로그?��
-		  // ?���??? 보내�???
-		  // ???�� 기다리기
-		  // �??? ???��?���???.
-		  char id[20];
-		  char pass[20];
+	  else if(pressedKey == 8){
+
+		  char id[20] = "";
+		  char pass[20] = "";
+
 		  int flag = 0;
 		  int idx = 0;
 		  int count = 0;
 		  while(1){
 			  pressedKey = getKeyNumber();
 			  int result = WriteString(pressedKey, id, pass, idx, flag);
-			  if(result == -1){	idx--; continue;  }
-			  else if(result == 1){ flag = 1; }
-			  else if(flag == 2){
-				  // ?���??? �??? ???��?�� 것과 비교.
-				  // 맞으�???  break;
-				  // ??리면 count +1 ?���??? ?��?�� ?���??? (idx =0, flag = 0)
-				  // data 베이?��?�� ?��?��
-				  break;
+			  LCD_LogIn(id,pass);
+			  if(result == -1){
+			  if(idx!=0){
+				  idx--;
+				  if(flag == 0) id[idx]= ' ';
+				  	  else pass[idx] = ' ';
+			  	  }
 			  }
+			  else if(result == 1){
+				  flag = 1; idx =0;
+			  }
+			  else if(result == 2){
+				  char temp[40];
+				  sprintf(temp,"300:%s:%sL",id,pass);
+				  HAL_UART_Transmit(&huart3, temp, strlen(temp), 20);
+
+				  delay_us(10);
+				  char exist = 0;
+				  while(1){
+					  if(HAL_UART_Receive(&huart3, &exist, 1, 10)==HAL_OK){
+						  break;
+					  }
+				  }
+
+				  if(exist == '0'){
+					  if(count ==2) {
+						  char missile[30];
+						  sprintf(missile,"%dL",400);
+						  LCD_LogInFalse_Missile();
+						  HAL_UART_Transmit(&huart3, missile, strlen(missile), 20);
+						  delay_us(10);
+						  break;
+					  }
+					  else{
+						  LCD_LogInFalse();
+						  flag = 0;
+						  idx = 0;
+						  sprintf(id," ");
+						  sprintf(pass," ");
+						  count++;
+					  }
+					  HAL_Delay(500);
+				  }
+				  else{
+					  LCD_LogInTrue();
+					  break;
+				  }
+			  }
+			  else if(result == 10) continue;
 			  else idx++;
 		  }
 
+	  }
+	  else{
+		  LCDMain();
 	  }
 
 
@@ -557,6 +633,7 @@ static void MX_TIM3_Init(void)
 
   TIM_ClockConfigTypeDef sClockSourceConfig = {0};
   TIM_MasterConfigTypeDef sMasterConfig = {0};
+  TIM_OC_InitTypeDef sConfigOC = {0};
 
   /* USER CODE BEGIN TIM3_Init 1 */
 
@@ -564,7 +641,7 @@ static void MX_TIM3_Init(void)
   htim3.Instance = TIM3;
   htim3.Init.Prescaler = 84-1;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 1000-1;
+  htim3.Init.Period = 20000-1;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -576,15 +653,28 @@ static void MX_TIM3_Init(void)
   {
     Error_Handler();
   }
+  if (HAL_TIM_PWM_Init(&htim3) != HAL_OK)
+  {
+    Error_Handler();
+  }
   sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
   if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
   {
     Error_Handler();
   }
+  sConfigOC.OCMode = TIM_OCMODE_PWM1;
+  sConfigOC.Pulse = 0;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
   /* USER CODE BEGIN TIM3_Init 2 */
 
   /* USER CODE END TIM3_Init 2 */
+  HAL_TIM_MspPostInit(&htim3);
 
 }
 
