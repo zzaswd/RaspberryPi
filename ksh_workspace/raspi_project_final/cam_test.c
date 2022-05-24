@@ -26,7 +26,7 @@ char in_sql[200];
 int main(){
 	//time_t base = time(NULL);
 	//struct tm* t = localtime(&base);
-
+	FILE * fp;
 	MYSQL *conn;
 	MYSQL_RES *res_ptr;
 	MYSQL_ROW sqlrow;
@@ -44,6 +44,8 @@ int main(){
     char *pArray[4] = {0};
     char *pToken;
     int res =0;
+    int angle = 90;
+    int mode = 0;
 //  printf("Raspberry Startup\n");
     fflush(stdout);
     if((fd = serialOpen(device, baud)) < 0 ){
@@ -62,6 +64,7 @@ int main(){
          	   ser_buff[index-1] = '\0';
                str_len = strlen(ser_buff);
                printf("ser_buff = %s\n",ser_buff);
+                              
 
 			   if(strcmp(ser_buff,"400")==0){  // 3번 틀렸을 때
 					time_t base = time(NULL);
@@ -108,6 +111,34 @@ int main(){
 	    			}
 	    			//printf("송신 끝\n");
 	    			mysql_free_result(res_ptr);
+			   }
+
+			   else if(strcmp(ser_buff,"C") == 0){
+			   		char s_stat[100];
+			   		
+					fp=fopen("/var/www/html/cam_control.txt","r");
+					fgets(s_stat,100,fp);
+
+					if(strcmp(s_stat,"LEFT")==0){
+						if(angle>0) angle =angle - 10;
+						printf("LEFT\n");
+						mode = 1;
+					}
+					else if(strcmp(s_stat,"RIGHT")==0){
+						if(angle<180) angle = angle + 10;
+						printf("RIGHT\n");
+						mode = 2;
+					}
+					else mode = 3;
+
+					char ang[10] = "";
+					if(mode == 3) sprintf(ang,"C");
+					else sprintf(ang,"%dL",angle);
+					int i = 0;
+					while(ang[i] !='\0'){
+						serialPutchar(fd,ang[i++]);
+						delay(10);
+					}
 			   }
 
 			   else{
