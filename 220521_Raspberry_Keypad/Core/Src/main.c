@@ -77,11 +77,6 @@ static void MX_I2C1_Init(void);
 char *pArray[10] = {0};
 char * pToken;
 
-int _write(int file, uint8_t* TxBuffer, int len){
-	HAL_UART_Transmit(&huart3, TxBuffer, len, 0xff);
-	return len;
-}
-
 void delay_us(uint16_t delay)
 {
 	TIM3->CNT =0;
@@ -97,7 +92,6 @@ int getKeyNumber()
 		HAL_GPIO_WritePin(GPIOC, out_pin, GPIO_PIN_RESET);
 		HAL_GPIO_WritePin(GPIOC, ~(out_pin), GPIO_PIN_SET);
 
-		//GPIOD->ODR &= ~(0x00000010 << i);	// i=0: --> b3b2b1b0=1110, i=1 --> 1101 ... column
 		HAL_Delay(30);
 
 		uint8_t in_pin = 0x10;
@@ -151,198 +145,234 @@ int WriteString(int num, char* id, char * pass,int idx,int flag){
 	return 10;
 }
 
-// DC Motor added
-// 로그?�� ?��?�� ?�� 미사?�� 발사(?)
 void Missile()
 {
-	// 5초간 ?��?�� ?�� ?���??
-	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIOF, GPIO_PIN_3, GPIO_PIN_SET);
 	HAL_Delay(3000);
-	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOF, GPIO_PIN_3, GPIO_PIN_RESET);
 }
 
-// LCD added
-// LCD 메인 ?���??
 void LCDMain(void) // Main LCD
 {
 	lcd_clear();
 	lcd_put_cur(0, 4);
 	lcd_send_string("WELCOME!");
 	lcd_put_cur(1, 0);
-	lcd_send_string("16:Reg  12:Login");
+	lcd_send_string("8:C 12:L 16:R");
 }
-
-// LCD ?��?�� ?���?? ?���??
-void LCD_Register(void) // ID, PW
-{
-	lcd_clear();
-	lcd_put_cur(0, 0);
-	lcd_send_string("ID :");
-	lcd_put_cur(1, 0);
-	lcd_send_string("PW :");
-	lcd_put_cur(0, 5);
-}
-
-void LCD_Register_Success(void) // ID, PW
-{
-	lcd_clear();
-	lcd_put_cur(0, 3);
-	lcd_send_string("Register");
-	lcd_put_cur(1, 3);
-	lcd_send_string("Success!!");
-	lcd_put_cur(0, 5);
-	HAL_Delay(2000);
-}
-
-void LCD_User_data(char** ID,int line){
-
-	lcd_clear();
-	lcd_put_cur(0, 0);
-	lcd_send_string("ID :");
-	lcd_send_string(ID[line]);
-	lcd_put_cur(1, 0);
-	lcd_send_string("ID :");
-	lcd_send_string(ID[line+1]);
-	lcd_put_cur(0, 5);
-}
-
-
-// LCD 로그?�� ?���??
 void LCD_LogIn(char*ID, char* PASS)
 {
 	lcd_clear();
-	lcd_put_cur(0, 0);
-	lcd_send_string("ID : ");
-	lcd_send_string(ID);
-	lcd_put_cur(1, 0);
-	lcd_send_string("PW : ");
-	lcd_send_string(PASS);
+	lcd_put_cur(0, 0);	lcd_send_string("ID : ");	lcd_send_string(ID);
+	lcd_put_cur(1, 0);	lcd_send_string("PW : ");	lcd_send_string(PASS);
 }
 
-// LCD 로그?�� ?���?? ?�� ?���??
+// LCD 로그?�� ?���??????? ?�� ?���???????
 void LCD_LogInTrue(void)
 {
 	lcd_clear();
-	lcd_put_cur(0, 4);
-	lcd_send_string("SUCCESS!");
-	lcd_put_cur(1, 3);
-	lcd_send_string("DOOR OPEN");
-	TIM3->CCR1 = 2000;
-	HAL_Delay(2000);
-	TIM3->CCR1 = 1000;
-	HAL_Delay(2000);
-
+	lcd_put_cur(0, 4);	lcd_send_string("SUCCESS!");
+	lcd_put_cur(1, 3);	lcd_send_string("DOOR OPEN");
+	TIM3->CCR1 = 2000;	HAL_Delay(2000);
+	TIM3->CCR1 = 1000;	HAL_Delay(2000);
 }
 
-// LCD 로그?�� ?��?�� ?�� ?���?? �?? 미사?�� 발사
 void LCD_LogInFalse_Missile(void)
 {
 	lcd_clear();
-	lcd_put_cur(0, 4);
-	lcd_send_string("FAILURE!");
-	lcd_put_cur(1, 1);
-	lcd_send_string("Missile Launch");
-	HAL_Delay(2000);
+	lcd_put_cur(0, 4);	lcd_send_string("FAILURE!");
+	lcd_put_cur(1, 1);	lcd_send_string("Missile Launch");
+	Missile();
 }
 
 void LCD_LogInFalse(void)
 {
 	lcd_clear();
-	lcd_put_cur(0, 4);
-	lcd_send_string("FAILURE!");
-	lcd_put_cur(1, 1);
-	lcd_send_string("Please Retry..");
-
+	lcd_put_cur(0, 4);	lcd_send_string("FAILURE!");
+	lcd_put_cur(1, 1);	lcd_send_string("Please Retry..");
 	HAL_Delay(2000);
 }
 
-// ?��?���??????��
-void RegisterData(void){//flag -1 �??????���????? flag 0 ID, flag 1 pass, flag 2 ?���?????
+void LCD_User_data(char** ID,int line){
+	lcd_clear();
+	lcd_put_cur(0, 0);
+	lcd_send_string("ID :");	lcd_send_string(ID[line]);
+	lcd_put_cur(1, 0);
+	lcd_send_string("ID :");	lcd_send_string(ID[line+1]);
+}
 
-			  char id[20] = "";
-			  char pass[20]= "";
-			  int flag = 0;
-			  int idx = 0;
 
-			  while(1){
+void LCD_Register_Success(void) // ID, PW
+{
+	lcd_clear();
+	lcd_put_cur(0, 3);	lcd_send_string("Register");
+	lcd_put_cur(1, 3);	lcd_send_string("Success!!");
+	HAL_Delay(2000);
+}
 
-				  int pressedKey = getKeyNumber();
-				  int result = WriteString(pressedKey, id, pass, idx, flag);
-				  LCD_LogIn(id,pass);
-				  if(result == -1){
-					  if(idx!=0){
-						  idx--;
-						  if(flag == 0) id[idx]= ' ';
-						  else pass[idx] = ' ';
-					  }
-				  }
-				  else if(result == 1){
-					  flag = 1; idx =0;
-				  }
-				  else if(result == 2){
+void RegisterData(void){
 
-					  // data 베이?��?�� ?��?��
-					  char temp[40];
-					  sprintf(temp,"100:%s:%sL",id,pass);
-					  HAL_UART_Transmit(&huart3, temp, strlen(temp), 20);
-					  LCD_Register_Success();
-					  break;
-				  }
-				  else if(result == 10) continue;
-				  else idx++;
+	char id[20] = "";
+	char pass[20]= "";
+	int flag = 0;
+	int idx = 0;
 
-			  }
-
-			  HAL_Delay(300);
-
+	while(1){
+		int pressedKey = getKeyNumber();
+		int result = WriteString(pressedKey, id, pass, idx, flag);
+		LCD_LogIn(id,pass);
+		if(result == -1){
+			if(idx!=0){
+				idx--;
+				if(flag == 0) id[idx]= ' ';
+				else pass[idx] = ' ';
+			}
+		}
+		else if(result == 1){
+			flag = 1; idx =0;
+		}
+		else if(result == 2){
+			char temp[40];
+			sprintf(temp,"100:%s:%sL",id,pass);
+			HAL_UART_Transmit(&huart3, temp, strlen(temp), 20);
+			LCD_Register_Success();
+			break;
+		}
+		else if(result == 10) continue;
+		else idx++;
+	}
+	HAL_Delay(300);
 }
 
 void ID_Check(void){
+/*
 
-			  char temp[10];
-			  sprintf(temp,"%dL",200);
-			  HAL_UART_Transmit(&huart3, temp, strlen(temp), 10);
+	char temp[10];
+	sprintf(temp,"%dL",200);
+	HAL_UART_Transmit(&huart3, temp, strlen(temp), 10);
+*/
+	HAL_UART_Transmit(&huart3, "200L", strlen("200L"), 10);
 
-			  uint8_t RxBuffer[100];
-			  uint8_t Rx_temp;
-			  int str_len;
-			  char* ID[100]={0};
-			  int idx = 0;
-			  delay_us(10);
-			  while(1){
-				  if(HAL_UART_Receive(&huart3, &Rx_temp, 1, 10)==HAL_OK){
-					  RxBuffer[idx++] = Rx_temp;
-					  delay_us(10);
-					  if(Rx_temp == 'L') break;
-				  }
-			  }
-			  RxBuffer[idx-1] = '\0';
-			  str_len = strlen(RxBuffer);
+	uint8_t RxBuffer[100];
+	uint8_t Rx_temp;
+	int str_len;
+	char* ID[30]={0};
+	int idx = 0;
+	delay_us(10);
+	while(1){
+		if(HAL_UART_Receive(&huart3, &Rx_temp, 1, 10)==HAL_OK){
+			RxBuffer[idx++] = Rx_temp;
+			delay_us(10);
+			if(Rx_temp == 'L') break;
+		}
+	}
+	RxBuffer[idx-1] = '\0';
+	//str_len = strlen(RxBuffer);
 
-			  pToken = strtok(RxBuffer,":");
-			  int i = 0;
-			  while(pToken !=NULL){
-				  ID[i] = pToken;
-				  if(++i>10)
-					  break;
-				  pToken = strtok(NULL,":");
-			  }
-			  int line = 0;
-			  while(1){
-				  LCD_User_data(ID, line);
-				  // LCD 출력
-				  // ID[line] 첫번�????? ?��?��, ID[line+1]?�� ?��번째 ?��?��
-				  if(getKeyNumber()==1){ //up
-					  if(line !=0) line--;
-				  }
-				  else if(getKeyNumber()==2){
-					  if(line<i-1) line ++;
-				  }
-				  else if(getKeyNumber()==4) break;
-			  }
+	pToken = strtok(RxBuffer,":");
+	//int i = 0;
+	idx = 0;
+	while(pToken !=NULL){
+		ID[idx] = pToken;
+		if(++idx>10)	break;
+		pToken = strtok(NULL,":");
+	}
 
+	int line = 0;
+	while(1){
+		LCD_User_data(ID, line);
+		if(getKeyNumber()==1){ //up
+			if(line !=0) line--;
+		}
+		else if(getKeyNumber()==2){
+			if(line<idx-1) line ++;
+		}
+		else if(getKeyNumber()==4) break;
+	}
 }
 
+void LogIn(void){
+	char id[20] = "";
+	char pass[20] = "";
+	int flag = 0;
+	int idx = 0;
+	int count = 0;
+	while(1){
+		int pressedKey = getKeyNumber();
+		int result = WriteString(pressedKey, id, pass, idx, flag);
+		LCD_LogIn(id,pass);
+		if(result == -1){
+			if(idx!=0){
+				idx--;
+				if(flag == 0) id[idx]= ' ';
+				else pass[idx] = ' ';
+			}
+		}
+		else if(result == 1){
+			flag = 1;
+			idx =0;
+		}
+		else if(result == 2){
+			char temp[40];
+			sprintf(temp,"300:%s:%sL",id,pass);
+			HAL_UART_Transmit(&huart3, temp, strlen(temp), 20);
+
+			delay_us(10);
+			char exist = 0;
+			while(1){
+				if(HAL_UART_Receive(&huart3, &exist, 1, 10)==HAL_OK)	break;
+			}
+
+			if(exist == '0'){
+				if(count ==2) {
+					HAL_UART_Transmit(&huart3,"400L",strlen("400L"),20);
+					LCD_LogInFalse_Missile();
+					break;
+				}
+				else{
+					LCD_LogInFalse();
+					flag = 0;
+					idx = 0;
+					sprintf(id," ");
+					sprintf(pass," ");
+					count++;
+				}
+				HAL_Delay(500);
+			}
+			else if(exist == '1'){
+				LCD_LogInTrue();
+				break;
+			}
+		}
+		else if(result == 10) continue;
+		else idx++;
+	}
+}
+
+
+void Camera_Control(void){
+
+	uint8_t RxBuffer[10];
+	uint8_t Rx_temp;
+	int idx = 0;
+	HAL_UART_Transmit(&huart3, "CL", strlen("CL"), 20);
+
+	delay_us(10);
+
+	while(1){
+		if(HAL_UART_Receive(&huart3, &Rx_temp, 1, 10)==HAL_OK){
+			if(Rx_temp == 'C') break;
+			RxBuffer[idx++] = Rx_temp;
+			delay_us(10);
+			if(Rx_temp == 'L') break;
+		}
+	}
+	RxBuffer[idx-1] = '\0';
+
+	int angle = atoi(RxBuffer);
+
+	TIM3->CCR2 = angle*10; // 60~240
+}
 /* USER CODE END 0 */
 
 /**
@@ -382,13 +412,16 @@ int main(void)
   int pressedKey;
   HAL_TIM_Base_Start(&htim3);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
+  HAL_GPIO_WritePin(GPIOF, GPIO_PIN_5, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOF, GPIO_PIN_3, GPIO_PIN_RESET);
   lcd_init();
-  LCDMain();
+  //LCDMain();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  // 4 : ?��?�� �?????,
+  // 4 : ?��?�� �??????????,
   // 8 :
   // 12 :
   // 16 :  ?��?��
@@ -397,78 +430,15 @@ int main(void)
   {
 	  pressedKey = getKeyNumber();
 
+
 	  if(pressedKey == 16)  RegisterData();
 
 	  else if(pressedKey == 12) ID_Check();
 
-	  else if(pressedKey == 8){
+	  else if(pressedKey == 8) LogIn();
 
-		  char id[20] = "";
-		  char pass[20] = "";
-
-		  int flag = 0;
-		  int idx = 0;
-		  int count = 0;
-		  while(1){
-			  pressedKey = getKeyNumber();
-			  int result = WriteString(pressedKey, id, pass, idx, flag);
-			  LCD_LogIn(id,pass);
-			  if(result == -1){
-			  if(idx!=0){
-				  idx--;
-				  if(flag == 0) id[idx]= ' ';
-				  	  else pass[idx] = ' ';
-			  	  }
-			  }
-			  else if(result == 1){
-				  flag = 1; idx =0;
-			  }
-			  else if(result == 2){
-				  char temp[40];
-				  sprintf(temp,"300:%s:%sL",id,pass);
-				  HAL_UART_Transmit(&huart3, temp, strlen(temp), 20);
-
-				  delay_us(10);
-				  char exist = 0;
-				  while(1){
-					  if(HAL_UART_Receive(&huart3, &exist, 1, 10)==HAL_OK){
-						  break;
-					  }
-				  }
-
-				  if(exist == '0'){
-					  if(count ==2) {
-						  char missile[30];
-						  sprintf(missile,"%dL",400);
-						  LCD_LogInFalse_Missile();
-						  HAL_UART_Transmit(&huart3, missile, strlen(missile), 20);
-						  delay_us(10);
-						  break;
-					  }
-					  else{
-						  LCD_LogInFalse();
-						  flag = 0;
-						  idx = 0;
-						  sprintf(id," ");
-						  sprintf(pass," ");
-						  count++;
-					  }
-					  HAL_Delay(500);
-				  }
-				  else{
-					  LCD_LogInTrue();
-					  break;
-				  }
-			  }
-			  else if(result == 10) continue;
-			  else idx++;
-		  }
-
-	  }
-	  else{
-		  LCDMain();
-	  }
-
+	  else  LCDMain();
+	  Camera_Control();
 
     /* USER CODE END WHILE */
 
@@ -671,6 +641,10 @@ static void MX_TIM3_Init(void)
   {
     Error_Handler();
   }
+  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
+  {
+    Error_Handler();
+  }
   /* USER CODE BEGIN TIM3_Init 2 */
 
   /* USER CODE END TIM3_Init 2 */
@@ -757,11 +731,15 @@ static void MX_GPIO_Init(void)
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
+  __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOG_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOF, GPIO_PIN_3|GPIO_PIN_5, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, LD1_Pin|LD3_Pin|LD2_Pin, GPIO_PIN_RESET);
@@ -780,6 +758,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(USER_Btn_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PF3 PF5 */
+  GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_5;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
 
   /*Configure GPIO pins : LD1_Pin LD3_Pin LD2_Pin */
   GPIO_InitStruct.Pin = LD1_Pin|LD3_Pin|LD2_Pin;
