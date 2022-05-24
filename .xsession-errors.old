@@ -1,4 +1,4 @@
-Xsession: X session started for pi at 2022. 05. 23. (월) 08:39:56 KST
+Xsession: X session started for pi at 2022. 05. 24. (화) 12:17:10 KST
 dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 dbus-update-activation-environment: setting DISPLAY=:0
 dbus-update-activation-environment: setting XAUTHORITY=/home/pi/.Xauthority
@@ -27,7 +27,7 @@ dbus-update-activation-environment: setting NO_AT_BRIDGE=1
 dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
 dbus-update-activation-environment: setting LC_ALL=ko_KR.UTF-8
 dbus-update-activation-environment: setting PWD=/home/pi
-** Message: 08:39:57.743: main.vala:101: Session is LXDE-pi
-** Message: 08:39:57.743: main.vala:102: DE is LXDE
-** Message: 08:39:57.950: main.vala:133: log directory: /home/pi/.cache/lxsession/LXDE-pi
-** Message: 08:39:57.950: main.vala:134: log path: /home/pi/.cache/lxsession/LXDE-pi/run.log
+** Message: 12:17:11.296: main.vala:101: Session is LXDE-pi
+** Message: 12:17:11.296: main.vala:102: DE is LXDE
+** Message: 12:17:11.477: main.vala:133: log directory: /home/pi/.cache/lxsession/LXDE-pi
+** Message: 12:17:11.477: main.vala:134: log path: /home/pi/.cache/lxsession/LXDE-pi/run.log
